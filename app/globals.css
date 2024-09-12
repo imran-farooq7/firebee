@@ -1,27 +1,62 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "~react-image-gallery/styles/css/image-gallery.css";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+#header {
+	background-image: url("../public/image\ 16.svg");
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.heroCard__popular {
+	background: linear-gradient(#a34d9f, #275fd0);
+	border-radius: 100px;
 }
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.module-border-wrap {
+	position: relative;
+	background: linear-gradient(#743ad5, #d53a9d);
+	border-radius: 10px;
+	max-width: 750px;
+	padding: 2px;
 }
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.deep {
+	background: linear-gradient(90deg, #2e034b 0%, #002182 50%, #2e034b 100%);
+	font-weight: 700;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.alert {
+	background: linear-gradient(90deg, #ff225e 0%, #9d2ac6 100%);
+	font-weight: 700;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.calm {
+	background: linear-gradient(90deg, #8bf2b5 0%, #35c8eb 100%);
+	font-weight: 700;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.focus {
+	background: linear-gradient(90deg, #e280da 0%, #6694ef 100%);
+	font-weight: 700;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.happy {
+	background: linear-gradient(90deg, #a34d9f 0%, #275fd0 100%);
+	font-weight: 700;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.divider {
+	background: linear-gradient(90deg, #8bf2b5 0%, #35c8eb 100%);
+	height: 10px;
+}
+.copy {
+	background: url("../public/copybg.svg");
+	background-size: cover;
 }
